@@ -1,0 +1,84 @@
+# General Python ignores
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+*.DS_Store
+
+# Virtual environment
+venv/
+.env
+*.venv
+env/
+*.envrc
+.Python
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and cache
+*.log
+logs/
+cache/
+*.sqlite3
+
+# FastAPI/Uvicorn logs
+*.db
+*.pid
+*.sock
+*.log
+
+# Alembic migrations (keep versions folder if necessary)
+migrations/
+!migrations/versions/
+migrations/versions/*.pyc
+
+# Database and credentials
+*.db
+db.sqlite3
+db.sqlite
+instance/
+postgres_data/
+config.json
+settings.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS generated files
+*.DS_Store
+*.vscode/
+*.idea/
+*.mypy_cache/
+*.pytest_cache/
+*.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+
+# Dependencies
+poetry.lock
+Pipfile
+Pipfile.lock
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+
+# FastAPI specific
+alembic.ini
+secrets.json
+
+# GitHub Actions
+.github/
+
+# Ignore dumps and archives
+*.tar.gz
+*.zip
+*.rar
+*.7z

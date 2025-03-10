@@ -1,0 +1,18 @@
+2025-03-09 10:44:05.793 IST [26100] LOG:  starting PostgreSQL 14.15 (Homebrew) on x86_64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.4), 64-bit
+2025-03-09 10:44:05.795 IST [26100] LOG:  listening on IPv6 address "::1", port 5432
+2025-03-09 10:44:05.795 IST [26100] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-03-09 10:44:05.795 IST [26100] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-03-09 10:44:05.800 IST [26131] LOG:  database system was shut down at 2025-03-09 10:43:51 IST
+2025-03-09 10:44:05.810 IST [26100] LOG:  database system is ready to accept connections
+2025-03-09 10:44:21.342 IST [26417] FATAL:  database "anuradhagupta" does not exist
+2025-03-09 10:44:35.516 IST [26659] FATAL:  role "postgres" does not exist
+2025-03-09 10:45:11.412 IST [27552] FATAL:  database "anuradhagupta" does not exist
+2025-03-09 10:45:20.500 IST [27743] FATAL:  role "postgres" does not exist
+2025-03-09 10:50:13.698 IST [32131] ERROR:  role "postgres" already exists
+2025-03-09 10:50:13.698 IST [32131] STATEMENT:  CREATE USER postgres WITH SUPERUSER CREATEDB CREATEROLE PASSWORD 'vspannipunaidb';
+2025-03-09 10:57:47.363 IST [41555] FATAL:  role "user" does not exist
+2025-03-09 10:57:47.655 IST [41565] FATAL:  role "user" does not exist
+2025-03-09 11:00:21.767 IST [44322] FATAL:  role "user" does not exist
+2025-03-09 11:01:06.007 IST [45369] FATAL:  role "user" does not exist
+2025-03-09 11:02:33.525 IST [46910] ERROR:  database "nipunai" already exists
+2025-03-09 11:02:33.525 IST [46910] STATEMENT:  CREATE DATABASE nipunai OWNER postgres;

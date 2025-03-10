@@ -1,14 +1,28 @@
 """
 © 2025 NipunAI. All Rights Reserved.
 """
+
+import os
 from fastapi import FastAPI
+from src.api import auth
+from src.api import users  # Fix import issue
+from src.api import subscriptions, climate, remote_sensing
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = FastAPI()
 
-@app.get('/')
-def read_root():
-    return {'message': 'Welcome to NipunAI'}
+# Include routers
+app.include_router(auth.router)
+app.include_router(users.router)
+app.include_router(subscriptions.router)
+app.include_router(climate.router)
+app.include_router(remote_sensing.router)
 
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run(app, host='0.0.0.0', port=8000)
+@app.get("/")
+def root():
+    return {"message": "Welcome to NipunAI Backend"}
+
+
